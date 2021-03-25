@@ -1,0 +1,33 @@
+ja:
+  activerecord:
+    models:
+      admin_user: "管理者"
+      comment: "コメント"
+      wine: "ワイン"
+      grape: "品種"
+      wholesaler: "ワイン会社"
+      winary: "生産者"
+
+    attributes:
+      admin_user:
+        id: "ID"
+        email: "メールアドレス"
+        current_sign_in_at: "ログイン状態"
+        sign_in_count: "ログイン回数"
+        created_at: "作成日"
+      wine:
+        id: "ID"
+        winename: "ワイン名"
+        winename_kana: "ワイン名カナ"
+        purchase_price: "仕入れ値"
+        salling_price: "販売価格"
+        country: "生産国"
+        state: "地方・州名"
+        bio: "有機栽培"
+        stock: "在庫数"
+        onlist: "リストに載せているか"
+        wholesaler: "ワイン会社"
+        winary: "生産者"
+        comment: "テイスティングノート"
+        created_at: "作成日"
+        updated_at: "更新日"

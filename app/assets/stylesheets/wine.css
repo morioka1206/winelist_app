@@ -1,0 +1,267 @@
+.select_label {
+  margin-bottom: 10px;
+}
+
+.wines-container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 270px auto auto;
+  grid-template-rows: 110px 1fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background: white;
+  grid-template-areas: 
+  "navi head head"
+  "navi wine wine"
+  "navi wine wine"
+  ;
+}
+
+.head {
+  grid-area: head;
+}
+
+.winenavi {
+  background: #ff9966;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f57e80, #e9a07b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-left: 24px;
+  grid-area: navi;
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  grid-template-rows: 2.5fr 1fr 3fr 1fr 3fr  1fr  3fr 1fr 1fr 1fr 3fr 1.5fr 1fr 1fr 1fr 1fr;
+}
+
+.spark {
+  /* background: linear-gradient(125deg, #6444Cf, #F7CD3F); */
+grid-area: 2 / 1 / 2 / 2;
+font-family: "Sawarabi Gothic";
+font-weight: normal;
+font-size: 12px;
+line-height: 29px;
+text-align: left;
+color: #5e566a;
+
+}
+
+.white {
+  /* background: linear-gradient(125deg, rgb(211, 211, 198), #eeeee9); */
+grid-area: 4 / 1 / 4 / 2;
+font-family: "Sawarabi Gothic";
+font-weight: normal;
+font-size: 12px;
+line-height: 29px;
+text-align: left;
+/* color: #5e566a; */
+
+}
+
+.red {
+  /* background: linear-gradient(125deg, #E83E66, #93291d); */
+grid-area: 6 / 1 / 6 / 2;
+font-family: "Sawarabi Gothic";
+font-weight: normal;
+font-size: 12px;
+line-height: 29px;
+text-align: left;
+color: #5e566a;
+
+}
+
+
+.orange {
+  /* background: linear-gradient(125deg, #E83E66, #93291d); */
+grid-area: 8 / 1 / 8 / 2;
+font-family: "Sawarabi Gothic";
+font-weight: normal;
+font-size: 12px;
+line-height: 29px;
+text-align: left;
+color: #5e566a;
+
+}
+
+.search {
+  background: linear-gradient(125deg, #ee9ca7,#ffdde1 );
+  grid-area: 12 /1 /12 /2;
+  
+}
+
+.fa-wine-bottle {
+  color: white;
+}
+
+.head {
+font-family: "Noto Sans JP";
+font-weight: normal;
+font-size: 13px;
+line-height: 29px;
+text-align: left;
+padding-left: 31px;
+padding-top: 30px;
+color: #1a1311;
+background-color: white;
+
+}
+
+.wine-container {
+  background-color: white;
+  grid-area: wine;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+}
+
+.wine {
+  padding-top: 5px;
+  margin-left: 50px;
+  margin-right: 40px;
+  background: linear-gradient(125deg, #64B44C, #F7CD3F);
+  height: 145px;
+  width: 550px;
+  position: relative;
+}
+
+.wine :last-child {
+  margin-left: auto;
+}
+
+.winenames {
+  display: flex;
+  position: relative;
+}
+
+
+.winename {
+font-family: 'Lexend', sans-serif;
+font-weight: normal;
+font-size: 12px;
+line-height: 21px;
+text-align: left;
+color: #1a1311;
+position: absolute;
+top: 10px;
+display: flex;
+}
+
+
+.winename-kana {
+font-family: 'Kiwi Maru', serif;
+font-weight: normal;
+font-size: 8px;
+line-height: 10px;
+text-align: left;
+color: #1a1311;
+margin-left: 16px;
+display: flex;
+
+}
+
+
+.winarynames{
+  position: relative;
+  position: absolute;
+  top: 35px;
+}
+
+
+
+.winaryname-kana {
+font-family: 'Kiwi Maru', serif;
+font-weight: normal;
+font-size: 8px;
+line-height: 10px;
+text-align: left;
+color: #1a1311;
+margin-left: 10px;
+position: absolute;
+bottom: 20px;
+
+
+}
+
+
+
+.winaryname {
+font-family: 'Lexend', sans-serif;
+font-weight: normal;
+font-size: 12px;
+line-height: 21px;
+text-align: left;
+color: #1a1311;
+
+}
+
+
+
+.winearea {
+  display: flex;
+  position: absolute;
+  top: 36px;
+  left:14px;
+}
+
+.winestate {
+font-family: 'Hind', sans-serif;
+font-weight: normal;
+font-size: 11px;
+line-height: 19px;
+text-align: left;
+color: #1a1311;
+
+}
+
+.winegrapes {
+font-family: 'Quicksand', sans-serif;
+font-weight: normal;
+font-size: 11px;
+line-height: 16px;
+text-align: left;
+color: #1a1311;
+position: absolute;
+top: 58px;
+left: 27px;
+
+
+}
+
+.winecountry {
+font-family: 'Hind', sans-serif;
+font-weight: bold;
+font-size: 11px;
+line-height: 19px;
+text-align: left;
+color: #1a1311;
+margin-left: 6px;
+padding-right: 5px;
+
+}
+
+.wineprice {
+font-family: 'PT Sans', sans-serif;
+font-weight: normal;
+font-size: 11px;
+line-height: 21px;
+text-align: right;
+color: #1a1311;
+margin-right: 5px;
+
+
+}
+
+.comment {
+  /* font-family: "Hannari"; */
+font-family: 'New Tegomin', serif;
+font-weight: normal;
+font-size: 10px;
+line-height: 19px;
+text-align: left;
+color: #1a1311;
+position: absolute;
+top: 85px;
+margin-left: 10px;
+margin-right: 5px;
+
+}

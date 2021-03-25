@@ -1,0 +1,38 @@
+class State < ActiveHash::Base
+self.data = [  
+  { id: 1,  name_kana: 'ーー', name: 'ーー'},
+  { id: 2,  name_kana: '●フランス●', name: 'France'},
+  { id: 3,  name_kana: 'ブルゴーニュ', name: 'Bourgogne'},
+  { id: 4,  name_kana: 'ボルドー', name: 'Bordeaux'},
+  { id: 5,  name_kana: 'ロワール', name: 'Loire'},
+  { id: 6,  name_kana: 'シャンパーニュ', name: 'Champagne'},
+  { id: 7,  name_kana: 'プロヴァンス', name: 'Provence'},
+  { id: 8,  name_kana: 'アルザス', name: 'Alsace'},
+  { id: 9,  name_kana: 'ローヌ', nam: 'Rhone'},
+  { id: 10,  name_kana: 'ジュラ・サヴォワ', name: 'Jura & Savois'},
+  { id: 11,  name_kana: '南西地方', name: 'Sud-Ouest'},
+  { id: 12,  name_kana: 'ラングドック・ルーション', name: 'Langudoc Roussillon'},
+  { id: 13,  name_kana: '●イタリア●', name: 'Italy'},
+  { id: 14,  name_kana: 'ピエモンテ', name: 'Piemonte'},
+  { id: 15,  name_kana: 'トレンティーノ・アルト・アディジェ', name: 'Trentino Alt Adige'},
+  { id: 16,  name_kana: 'ヴァッレ・ダオスタ', name: "Valle d'Aosta"},
+  { id: 17,  name_kana: 'ロンバルディア', name: 'Lombardia'},
+  { id: 18,  name_kana: 'フリウリ・ヴェネツィア・ジューリア', name: 'Furiuli Venezia Giulia'},
+  { id: 19,  name_kana: 'ヴェネト', name: 'Veneto'},
+  { id: 20,  name_kana: 'リグーリア', name: 'Liguria'},
+  { id: 21,  name_kana: 'エミリア・ロマーニャ',name: 'Emilia Romagna'},
+  { id: 22,  name_kana: 'トスカーナ', name: 'Toscana'},
+  { id: 23,  name_kana: 'マルケ', name: 'Marche'},
+  { id: 24,  name_kana: 'ウンブリア', name: 'Umbria'},
+  { id: 25,  name_kana: 'ラッツィオ', name: 'Lazio'},
+  { id: 26,  name_kana: 'アブルッツォ', name: 'Aburuzzo'},
+  { id: 27,  name_kana: 'モリーゼ', name: 'Molise'},
+  { id: 28,  name_kana: 'カンパーニャ', name: 'Campania'},
+  { id: 29,  name_kana: 'プーリア', name: 'Puglia'},
+  { id: 30,  name_kana: 'バジリカータ', name: 'Basilicata'},
+  { id: 31,  name_kana: 'カラブリア', name: 'Calabria'},
+  { id: 32,  name_kana: 'サルデーニャ', name: 'Sardegna'},
+  { id: 33,  name_kana: 'シチリア', name: 'Sicilia'}
+]
+  
+end
