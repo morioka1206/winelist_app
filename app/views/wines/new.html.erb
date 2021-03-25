@@ -1,0 +1,46 @@
+
+<div class="contents row">
+  <div class="container">
+    <h3>登録する</h3>
+    <%= form_with(model: @wine_winary,url: wines_path, local: true) do |form| %>
+      <div class="select_label">ワインの種類
+      <%= form.collection_select :type_id, Type.all, :id, :name %>
+      </div>
+      <div class="form_label">ワイン名</div>
+      <%= form.text_field :winename, placeholder: "Tokyo chardonnay" %>
+      <%= form.text_field :winename_kana, placeholder: "トウキョウシャルドネ" %>
+      <div class="form_label">ワイン生産者</div>
+      <%= form.text_field :winaryname, placeholder: "morioka wine" %>
+      <%= form.text_field :winaryname_kana, placeholder: "モリオカワイン" %>
+      <div class="form_label">ワイン会社名</div>
+      <%= form.text_field :name, placeholder: "例：カクヤス" %>
+      <div class="form_label">品種</div>
+      <%= form.text_field :grapename1, placeholder: "品種1" %>
+      <%= form.text_field :grapename1, placeholder: "品種2" %>
+      <%= form.text_field :grapename1, placeholder: "品種3" %>
+      <%= form.text_field :grapename1, placeholder: "品種4" %>
+      <%= form.text_field :grapename1, placeholder: "品種5" %>
+      <div class="form_label">仕入れ値</div>
+      <%= form.number_field :purchase_price, placeholder: "例：1200" %>
+      <div class="form_label">販売価格</div>
+      <%= form.text_field :salling_price, placeholder: "例：4000" %>
+      <p>写真ファイルをアップロードできます</P>
+      <%= form.file_field :image %>
+      <div class="select_label">有機栽培か
+      <%= form.collection_select :bio_id, Bio.all, :id, :name %>
+      </div>
+      <div class="select_label">生産国
+      <%= form.collection_select :country_id, Country.all, :id, :name_kana %>
+      </div>
+      <div class="select_label">生産地
+      <%= form.collection_select :state_id, State.all, :id, :name_kana %>
+      </div>
+      <%= form.text_area :comment, placeholder: "例：豊かな果実味と綺麗な酸、アンダルシア地方の特徴が感じられます。", rows: "10" %>
+      <div class="form_label">在庫数</div>
+      <%= form.number_field :stock, placeholder: "例：1" %>
+      <div class="form_label">オンリストしている場合はチェックしてください</div>
+      <%= form.check_box :onlist, {}, "true", "false" %>
+      <%= form.submit "SEND" %>
+    <% end %>
+  </div>
+</div>

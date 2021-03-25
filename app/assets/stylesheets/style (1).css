@@ -642,7 +642,6 @@ html {
 }
 
 body {
-  padding-top: 60px;
 }
 
 h1,
@@ -1009,7 +1008,7 @@ form input[type="submit"]:hover {
   margin: 20px 0;
   padding: 30px;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
-  background-color: white;
+  background: linear-gradient(125deg, #ffd673, #ffb2c1);
   box-sizing: border-box;
 }
 
@@ -1057,3 +1056,19 @@ footer p {
 .search-form .search-btn {
   width: 10%;
 }
+
+.youtube {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+header video {
+  object-fit: cover;
+  object-position: center top;
+  width: 100vw;
+  height: 100vh;
+}
+

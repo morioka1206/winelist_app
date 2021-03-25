@@ -53,8 +53,15 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
-gem 'acts-as-taggable-on', '~> 6.0'
+gem 'acts-as-taggable-on'
 gem 'pry-rails'
 gem 'active_hash'
 gem 'ransack'
 gem 'kaminari'
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'
+gem 'activeadmin'
+gem 'rails-i18n'
+gem 'devise-i18n'
+gem 'toastr-rails'
+gem 'active_skin'
